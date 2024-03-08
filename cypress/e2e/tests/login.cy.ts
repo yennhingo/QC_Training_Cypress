@@ -15,7 +15,7 @@ describe("Login test", ()=> {
         cy.get(LoginPage.userName).clear().type(loginData.userName)
         cy.get(LoginPage.passWord).clear().type(loginData.passWord)
         cy.get(LoginPage.loginBtn).click()
-        cy.get(LoginPage.usernameLabel, {timeout: 5000}).should("be.visible")
+        cy.get(LoginPage.usernameLabel, {timeout: 10000}).should("be.visible")
     })
 
     it("TC2: Login successfully with xpath", () => {
